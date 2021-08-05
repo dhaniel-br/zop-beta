@@ -1,0 +1,43 @@
+<template>
+  <footer class="footer">
+    <Container>
+      <Logo />
+      <p>Copyright &copy; 2021 ZOP</p>
+    </Container>
+  </footer>
+</template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({})
+</script>
+
+<style lang="scss" scoped>
+.footer {
+  width: 100%;
+  height: 110px;
+  background: color(black, 'dark');
+  @include screen('small') {
+    display: grid;
+    justify-content: center;
+  }
+  .container {
+    display: grid;
+    height: 100%;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    @include screen('small') {
+      display: grid;
+      height: 100%;
+      grid-auto-flow: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p {
+      color: color(white, 'lighter');
+    }
+  }
+}
+</style>

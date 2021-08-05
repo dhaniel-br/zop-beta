@@ -1,0 +1,13 @@
+<template>
+  <div>
+    <UploadTemplate />
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  layout: 'zop'
+})
+</script>

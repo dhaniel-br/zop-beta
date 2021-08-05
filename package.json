@@ -1,0 +1,52 @@
+{
+  "name": "zop-interface",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "lint": "vue-cli-service lint",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxtjs/firebase": "^7.6.1",
+    "core-js": "^3.15.1",
+    "enhanced-resolve": "^5.8.2",
+    "feather-icons": "^4.28.0",
+    "firebase": "^8.8.1",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.15.7",
+    "swiper": "^6.8.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.14.7",
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtclub/feathericons": "^1.0.0",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/style-resources": "^1.2.0",
+    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.12.1",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.3.2",
+    "sass-loader": "^10.1.1"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
