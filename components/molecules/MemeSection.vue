@@ -6,34 +6,6 @@
         <div class="swiper-slide">
           <Media />
         </div>
-        <div class="swiper-slide">
-          <Media />
-        </div>
-        <div class="swiper-slide">
-          <Media />
-        </div>
-
-        <div class="swiper-slide">
-          <Media />
-        </div>
-        <div class="swiper-slide">
-          <Media />
-        </div>
-        <div class="swiper-slide">
-          <Media />
-        </div>
-
-        <div class="swiper-slide">
-          <Media />
-        </div>
-
-        <div class="swiper-slide">
-          <Media />
-        </div>
-        <div class="swiper-slide">
-          <Media />
-        </div>
-        
       </div>
     </div>
   </div>
@@ -76,15 +48,15 @@ export default {
 
 <style lang="scss" scoped>
 .meme-section {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
   .swiper-container {
     width: 960px;
     height: 612px;
-    @include screen('small') {
-    width: 320px;
-    height: 180px;
+    @include screen('medium') {
+      width: 375px;
+      height: 210px;
     }
-  } 
+  }
 }
 </style>

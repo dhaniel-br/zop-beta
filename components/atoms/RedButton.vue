@@ -30,11 +30,6 @@ export default Vue.extend({})
 
   border-radius: 16px;
 
-  /* Inside Auto Layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 32px;
   p {
     font-weight: 600;
   }

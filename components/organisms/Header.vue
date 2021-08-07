@@ -47,7 +47,7 @@ export default Vue.extend({})
       display: grid;
       height: 100%;
       grid-auto-flow: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
     }
     .items {

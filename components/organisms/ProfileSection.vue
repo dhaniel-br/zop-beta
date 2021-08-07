@@ -17,12 +17,23 @@
   justify-content: center;
   align-items: center;
   gap: 64px;
-  .buttons {
+  @include screen('small') {
+    margin: 0;
+  }
+
+  .profile-header {
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    grid-gap: 32px;
+    width: auto;
+    .buttons {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      align-items: center;
+      grid-gap: 32px;
+    }
   }
 }
 </style>

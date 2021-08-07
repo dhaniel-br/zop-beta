@@ -1,8 +1,12 @@
 <template>
-  <div>
+  <div class="profile-template">
     <ProfileSection />
-    <MemeListSection />
   </div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.profile-template {
+  display: grid;
+  grid-gap: 4rem;
+}
+</style>

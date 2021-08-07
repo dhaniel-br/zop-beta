@@ -3,7 +3,7 @@
     <div class="profile-header">
       <Avatar />
       <Ztag tag="bifotepadrao" />
-      <Description text="descrição 🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷" />
+      <Description text="descrição 🇧🇷 🇧🇷 🇧🇷 🇧🇷 🇧🇷 🇧🇷 🇧🇷" />
     </div>
   </Container>
 </template>
@@ -12,18 +12,15 @@
 .container {
   display: grid;
   justify-content: center;
+  @include screen('small') {
+    margin: 0px;
+  }
   .profile-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
-
-    position: static;
-    width: 496px;
-    height: 304px;
-    left: 0px;
-    top: 0px;
 
     .logo {
       width: 120px;
