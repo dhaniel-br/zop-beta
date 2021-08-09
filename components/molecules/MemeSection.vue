@@ -4,7 +4,10 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <Media />
+          <img src="@/assets/img/meme1.jpg" alt="meme" class="media" />
+        </div>
+        <div class="swiper-slide">
+          <img src="@/assets/img/meme2.jpeg" alt="meme" class="media" />
         </div>
       </div>
     </div>
@@ -49,6 +52,7 @@ export default {
 <style lang="scss" scoped>
 .meme-section {
   display: flex;
+  align-items: center;
   gap: 1rem;
   .swiper-container {
     width: 960px;
@@ -56,6 +60,10 @@ export default {
     @include screen('medium') {
       width: 375px;
       height: 210px;
+    }
+    .media {
+      width: 100%;
+      height: 100%;
     }
   }
 }
