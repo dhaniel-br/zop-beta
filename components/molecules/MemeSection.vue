@@ -4,12 +4,23 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="@/assets/img/meme1.jpg" alt="meme" class="media" />
+          <img src="@/assets/img/memes/meme1.jpg" alt="meme" class="media" />
         </div>
         <div class="swiper-slide">
-          <img src="@/assets/img/meme2.jpeg" alt="meme" class="media" />
+          <img src="@/assets/img/memes/meme2.jpeg" alt="meme" class="media" />
+        </div>
+        <div class="swiper-slide">
+          <img src="@/assets/img/memes/meme3.jpg" alt="meme" class="media" />
+        </div>
+        <div class="swiper-slide">
+          <img src="@/assets/img/memes/meme4.jpg" alt="meme" class="media" />
+        </div>
+        <div class="swiper-slide">
+          <video src="@/assets/img/memes/meme6.mp4" controls class="media" />
         </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </template>
@@ -30,8 +41,8 @@ export default {
         el: '.swiper-pagination'
       },
       navigation: {
-        nextEl: '.swiper-button-unique-next',
-        prevEl: '.swiper-button-unique-prev'
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
       },
       scrollbar: {
         el: '.swiper-scrollbar'
