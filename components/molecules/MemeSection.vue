@@ -13,9 +13,6 @@
           <img src="@/assets/img/memes/meme3.jpg" alt="meme" class="media" />
         </div>
         <div class="swiper-slide">
-          <img src="@/assets/img/memes/meme4.jpg" alt="meme" class="media" />
-        </div>
-        <div class="swiper-slide">
           <video src="@/assets/img/memes/meme6.mp4" controls class="media" />
         </div>
       </div>
